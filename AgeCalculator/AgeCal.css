@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(127, 107, 240);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    width: 350px;
+    background-color: silver;
+    border-radius: 10px;
+    box-shadow:0 2px 10px black;
+    padding: 20px;
+}
+.calculator-header h1{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.calculator-display{
+    font-size: 18px;
+    color: rgb(11, 2, 37);
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgb(214, 76, 76);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow:0 2px 10px black;
+    display: none;
+}
+.calculator-input{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 22px;
+    border-radius: 5px;
+    background-color: rgb(185, 71, 71);
+    box-shadow:0 2px 10px black;
+    padding: 11px;
+    box-shadow:0 3px 10px black;
+}
+.calculator-input h3{
+    font-size: 20px;
+    color: rgb(5, 1, 19);
+    margin-bottom: 10px;
+}
+.input-container{
+    width: 100%;
+    display: flex;
+}
+.date-of-birth, .age-on-this-date{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.date-of-birth input, .age-on-this-date input{
+    flex: 1;
+    height: 40px;
+    width: calc(33.33% - 10px);
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.date-of-birth input:focus, .age-on-this-date input:focus{
+     border-color: black;
+}
+
+.date-of-birth input:last-child, .age-on-this-date input:last-child{
+    margin-right: 0px;
+    
+}
+
+.button-group{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.button-group button{
+    width: 120px;
+    height: 40px;
+    background: rgb(29, 2, 78);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-right: 10px;
+}
+.button-group button:last-child{
+    margin-right: 0px;
+}
+.button-group button:hover{
+    background-color: rgb(90, 45, 133);
+}
